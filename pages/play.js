@@ -1,3 +1,4 @@
+import Gameboard from "@/components/Gameboard";
 import Head from "next/head";
 
 const Play = () => {
@@ -8,7 +9,7 @@ const Play = () => {
       </Head>
       <div>
         <h1>Game Page</h1>
-        <p>Footy Tic Tac Toe</p>
+        <Gameboard />
       </div>
     </>
   );

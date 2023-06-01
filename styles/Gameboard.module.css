@@ -1,0 +1,71 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game_menu {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.game_board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+.square {
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: 0px 4px #ddd;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.square_input {
+  font-size: 128px;
+  line-height: 0px;
+  font-weight: bold;
+}
+
+.square.highlight {
+  background-color: aquamarine;
+  box-shadow: none;
+}
+
+.modal {
+  width: 250px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s;
+}
+
+.modal.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.but {
+  border: none;
+  width: 100%;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 600;
+}
